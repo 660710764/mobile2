@@ -1,3 +1,9 @@
+import 'package:animation/assignment.dart';
+import 'package:animation/example_animation.dart';
+import 'package:animation/example_animation2.dart';
+import 'package:animation/example_animation3.dart';
+import 'package:animation/example_animation4.dart';
+import 'package:animation/example_setting_page.dart';
 import 'package:flutter/material.dart';
 import 'package:animation/example_customwidget.dart';
 import 'package:animation/example_scoreboard.dart';
@@ -16,21 +22,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Profile(
-              name: 'Banlu Chimsing',
-              position: 'Programmer',
-              email: 'chimsing_b@silpakorn.edu',
-              phoneNumber: '092-516-5069',
-              imageUrl: 'https://picsum.photos/200',
-            ),
-          ],
+        textTheme: TextTheme(
+          bodyMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+          titleLarge: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
         ),
       ),
+      home: const Assignment(),
     );
   }
 }
